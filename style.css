@@ -1,0 +1,104 @@
+body {
+  background-image: url(./freebeach.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #000;
+  height: 60px;
+  font-size: 1.4rem;
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  padding-right: 25px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:first-child {
+  margin-right: auto;
+  color: yellowgreen;
+}
+a:hover {
+  color: hsl(0, 0%, 90%);
+}
+.head-card {
+  background: #000;
+  padding: 60px;
+  margin: 50px;
+  width: 50%;
+  max-width: 400px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head-card h1 {
+  padding: 0px 0px 30px;
+  font-size: 2.5rem;
+  font-family: monospace;
+}
+.head-card h3 {
+  color: yellowgreen;
+
+}
+p{
+  margin-bottom: 20px;
+}
+.abtn{
+  background: green;
+  border: none;
+  padding: 5px;
+  margin-top: 0px;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+}
+.faith{
+  display: none;
+}
+.sidebar{
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: start;
+  align-items:start;
+}
+.sidebar a{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar a:hover{
+  background: yellowgreen;
+}
+.sidebar :first-child{
+  background: hsl(80, 61%, 30%);
+  padding: 20px;
+
+}
+@media (max-width:600px) {
+  .hidethis{
+    display: none;
+  }
+  .faith{
+    display: inline-block;
+  }
+  
+}
+@media (max-width:450px) {
+  .sidebar{
+    width: 100%;
+  }
+}
